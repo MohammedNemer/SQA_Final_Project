@@ -1,0 +1,1086 @@
+{
+	"id": "9bdeb79e-3e76-4616-820c-0a0017fac22f",
+	"name": "Performance and Reliability tests",
+	"timestamp": "2024-12-23T13:40:44.309Z",
+	"collection_id": "39856933-7d737221-d199-4a15-9350-2f4d0bc1c947",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 314,
+	"delay": "10",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-23T13:40:09.512Z",
+	"totalFail": 86,
+	"results": [
+		{
+			"id": "05af7078-98b9-4c8a-8830-dba56c212b55",
+			"name": "Get All Tasks",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+			"time": 136,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Response is an array": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 79,
+					"fail": 21
+				},
+				"Response is an array": {
+					"pass": 79,
+					"fail": 21
+				}
+			},
+			"times": [
+				472,
+				145,
+				148,
+				145,
+				143,
+				148,
+				149,
+				146,
+				147,
+				145,
+				145,
+				145,
+				161,
+				143,
+				146,
+				145,
+				145,
+				145,
+				143,
+				144,
+				142,
+				144,
+				143,
+				143,
+				144,
+				143,
+				144,
+				143,
+				147,
+				150,
+				151,
+				147,
+				149,
+				142,
+				146,
+				142,
+				144,
+				143,
+				141,
+				144,
+				137,
+				138,
+				137,
+				138,
+				138,
+				138,
+				138,
+				138,
+				137,
+				137,
+				408,
+				138,
+				143,
+				138,
+				138,
+				140,
+				137,
+				138,
+				139,
+				146,
+				147,
+				142,
+				143,
+				144,
+				145,
+				148,
+				147,
+				146,
+				145,
+				143,
+				142,
+				143,
+				146,
+				143,
+				145,
+				143,
+				142,
+				148,
+				143,
+				147,
+				148,
+				144,
+				148,
+				145,
+				143,
+				146,
+				149,
+				145,
+				144,
+				145,
+				146,
+				145,
+				142,
+				148,
+				143,
+				144,
+				137,
+				144,
+				144,
+				136
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				},
+				{
+					"Status code is 200": false,
+					"Response is an array": false
+				}
+			]
+		},
+		{
+			"id": "8d3ad45d-ddcd-4550-a985-4ecb629d82fd",
+			"name": "Create New Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+			"time": 136,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Task is created successfully": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 78,
+					"fail": 22
+				},
+				"Task is created successfully": {
+					"pass": 78,
+					"fail": 22
+				}
+			},
+			"times": [
+				148,
+				153,
+				156,
+				168,
+				153,
+				148,
+				155,
+				150,
+				149,
+				149,
+				148,
+				152,
+				148,
+				150,
+				149,
+				156,
+				148,
+				155,
+				146,
+				147,
+				147,
+				147,
+				149,
+				150,
+				146,
+				149,
+				148,
+				152,
+				150,
+				150,
+				164,
+				148,
+				158,
+				148,
+				146,
+				150,
+				150,
+				151,
+				153,
+				148,
+				137,
+				137,
+				137,
+				136,
+				139,
+				141,
+				138,
+				137,
+				139,
+				137,
+				139,
+				137,
+				136,
+				138,
+				139,
+				136,
+				136,
+				139,
+				139,
+				149,
+				150,
+				148,
+				149,
+				149,
+				147,
+				151,
+				154,
+				146,
+				147,
+				163,
+				146,
+				148,
+				151,
+				149,
+				146,
+				147,
+				147,
+				146,
+				146,
+				148,
+				151,
+				146,
+				149,
+				151,
+				151,
+				145,
+				147,
+				150,
+				149,
+				153,
+				150,
+				147,
+				149,
+				147,
+				148,
+				149,
+				137,
+				137,
+				150,
+				136
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				}
+			]
+		}
+	],
+	"count": 100,
+	"totalTime": 29679,
+	"collection": {
+		"requests": [
+			{
+				"id": "05af7078-98b9-4c8a-8830-dba56c212b55",
+				"method": "GET"
+			},
+			{
+				"id": "8d3ad45d-ddcd-4550-a985-4ecb629d82fd",
+				"method": "POST"
+			}
+		]
+	}
+}

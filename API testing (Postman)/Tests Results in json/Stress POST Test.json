@@ -1,0 +1,554 @@
+{
+	"id": "e63b2191-45ab-48d6-89ca-2fc7c52a70e9",
+	"name": "Performance and Reliability tests",
+	"timestamp": "2024-12-23T13:37:34.620Z",
+	"collection_id": "39856933-7d737221-d199-4a15-9350-2f4d0bc1c947",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 160,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-23T13:37:18.311Z",
+	"totalFail": 40,
+	"results": [
+		{
+			"id": "8d3ad45d-ddcd-4550-a985-4ecb629d82fd",
+			"name": "Create New Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+			"time": 143,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Task is created successfully": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 80,
+					"fail": 20
+				},
+				"Task is created successfully": {
+					"pass": 80,
+					"fail": 20
+				}
+			},
+			"times": [
+				483,
+				149,
+				150,
+				147,
+				148,
+				147,
+				147,
+				149,
+				155,
+				147,
+				148,
+				149,
+				148,
+				150,
+				147,
+				146,
+				148,
+				149,
+				147,
+				148,
+				148,
+				147,
+				155,
+				147,
+				147,
+				147,
+				147,
+				147,
+				146,
+				146,
+				153,
+				151,
+				149,
+				147,
+				149,
+				150,
+				147,
+				146,
+				152,
+				148,
+				147,
+				148,
+				155,
+				149,
+				150,
+				150,
+				149,
+				152,
+				149,
+				160,
+				147,
+				148,
+				147,
+				148,
+				149,
+				147,
+				146,
+				147,
+				146,
+				145,
+				149,
+				150,
+				153,
+				159,
+				153,
+				149,
+				148,
+				146,
+				146,
+				148,
+				149,
+				147,
+				137,
+				136,
+				155,
+				149,
+				158,
+				153,
+				138,
+				138,
+				149,
+				137,
+				137,
+				148,
+				138,
+				148,
+				149,
+				138,
+				136,
+				138,
+				136,
+				140,
+				137,
+				136,
+				135,
+				136,
+				137,
+				137,
+				138,
+				143
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				},
+				{
+					"Status code is 201": false,
+					"Task is created successfully": false
+				}
+			]
+		}
+	],
+	"count": 100,
+	"totalTime": 15004,
+	"collection": {
+		"requests": [
+			{
+				"id": "8d3ad45d-ddcd-4550-a985-4ecb629d82fd",
+				"method": "POST"
+			}
+		]
+	}
+}

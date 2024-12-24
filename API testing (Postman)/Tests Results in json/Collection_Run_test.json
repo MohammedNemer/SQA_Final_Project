@@ -1,0 +1,312 @@
+{
+	"id": "77f3b0b5-9f53-44a7-b8f6-a14a7516e3b1",
+	"name": "API Testing",
+	"timestamp": "2024-12-23T16:45:29.326Z",
+	"collection_id": "39856933-e54279f8-c1d9-4615-8786-4143684de69d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-23T16:45:27.886Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "70c7ec12-c11f-4473-94ef-2621856ea94e",
+			"name": "Get All Tasks",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+			"time": 147,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is an array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				147
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is an array": true
+				}
+			]
+		},
+		{
+			"id": "f89289ab-f2d6-4f3a-ac3c-9443c42f4efa",
+			"name": "GET Non-Existent Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+			"time": 145,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response contains 'Not found'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Not found'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response contains 'Not found'": true
+				}
+			]
+		},
+		{
+			"id": "06c8a4e1-b3f4-4053-b521-ccad9e9f6b38",
+			"name": "Create New Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+			"time": 146,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Task is created successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Task is created successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				146
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Task is created successfully": true
+				}
+			]
+		},
+		{
+			"id": "e35bca90-b4f2-4329-a605-21b4737d4394",
+			"name": "Invalid URL",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks100",
+			"time": 141,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response contains Invalid request": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains Invalid request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response contains Invalid request": true
+				}
+			]
+		},
+		{
+			"id": "9a368dd9-d6b7-4d1e-94c5-1efa8bdaa099",
+			"name": "Update an Existing Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/21",
+			"time": 149,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Task is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Task is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Task is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "43f35070-410a-4fe0-9b28-3cc8a71ea393",
+			"name": "Update Non-Existent Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+			"time": 142,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response contains 'Not found'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Not found'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response contains 'Not found'": true
+				}
+			]
+		},
+		{
+			"id": "4c90e139-0be9-4fc5-8526-f5caa7054531",
+			"name": "Delete an Existing Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/21",
+			"time": 148,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 ( Task Deleted )": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 ( Task Deleted )": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				148
+			],
+			"allTests": [
+				{
+					"Status code is 200 ( Task Deleted )": true
+				}
+			]
+		},
+		{
+			"id": "a8ad09bc-ae3a-4aad-ae04-ce422291e76d",
+			"name": "Delete Non-Existent Task",
+			"url": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+			"time": 146,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Response contains 'Not found'": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'Not found'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				146
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Response contains 'Not found'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1164,
+	"collection": {
+		"requests": [
+			{
+				"id": "70c7ec12-c11f-4473-94ef-2621856ea94e",
+				"method": "GET"
+			},
+			{
+				"id": "f89289ab-f2d6-4f3a-ac3c-9443c42f4efa",
+				"method": "GET"
+			},
+			{
+				"id": "06c8a4e1-b3f4-4053-b521-ccad9e9f6b38",
+				"method": "POST"
+			},
+			{
+				"id": "e35bca90-b4f2-4329-a605-21b4737d4394",
+				"method": "POST"
+			},
+			{
+				"id": "9a368dd9-d6b7-4d1e-94c5-1efa8bdaa099",
+				"method": "PUT"
+			},
+			{
+				"id": "43f35070-410a-4fe0-9b28-3cc8a71ea393",
+				"method": "PUT"
+			},
+			{
+				"id": "4c90e139-0be9-4fc5-8526-f5caa7054531",
+				"method": "DELETE"
+			},
+			{
+				"id": "a8ad09bc-ae3a-4aad-ae04-ce422291e76d",
+				"method": "DELETE"
+			}
+		]
+	}
+}

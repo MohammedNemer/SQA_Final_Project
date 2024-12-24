@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "7d737221-d199-4a15-9350-2f4d0bc1c947",
+		"name": "Performance and Reliability tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39856933"
+	},
+	"item": [
+		{
+			"name": "Get All Tasks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response is an array\", function () {",
+							"    pm.expect(pm.response.json()).to.be.an(\"array\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Task is created successfully\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"id\");",
+							"    pm.expect(jsonData).to.have.property(\"title\", \"New Task\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Task\",\n    \"completed\": false\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

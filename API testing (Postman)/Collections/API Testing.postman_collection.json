@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "e54279f8-c1d9-4615-8786-4143684de69d",
+		"name": "API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39856933"
+	},
+	"item": [
+		{
+			"name": "Get All Tasks",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response is an array\", function () {",
+							"    pm.expect(pm.response.json()).to.be.an(\"array\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Non-Existent Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Response contains 'Not found'\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Not found\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Task is created successfully\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"id\");",
+							"    pm.expect(jsonData).to.have.property(\"title\", \"New Task\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Task\",\n    \"completed\": false\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid URL",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});",
+							"",
+							"pm.test(\"Response contains Invalid request\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Invalid request\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks100",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an Existing Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Task is updated successfully\", function () {",
+							"    let jsonData = pm.response.json();",
+							"    pm.expect(jsonData).to.have.property(\"title\", \"Updated Task\");",
+							"    pm.expect(jsonData).to.have.property(\"completed\", true);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Updated Task\",\n    \"completed\": true\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/21",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Non-Existent Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Response contains 'Not found'\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Not found\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Invalid Task\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an Existing Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200 ( Task Deleted )\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/21",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Non-Existent Task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Response contains 'Not found'\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Not found\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6768b820cbf3d7cefd38875c.mockapi.io/api/project/tasks/100",
+					"protocol": "https",
+					"host": [
+						"6768b820cbf3d7cefd38875c",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"project",
+						"tasks",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
