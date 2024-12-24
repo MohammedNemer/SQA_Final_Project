@@ -6,44 +6,41 @@ from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
-# Setup WebDriver
 service = Service("/usr/local/bin/chromedriver")
 driver = webdriver.Chrome(service=service)
 
 try:
-    # Step 1: Open MockAPI website
+    # open MockAPI website
     driver.get("https://mockapi.io/")
     driver.maximize_window()
-    time.sleep(2)  # Wait for the page to load
+    time.sleep(2) 
 
-    # Step 2: Click on the Login button
+    # click on the Login button
     login_button = driver.find_element(By.LINK_TEXT, "Login")
     login_button.click()
-    time.sleep(2)  # Wait for the login page to load
+    time.sleep(2) 
 
-    # Step 3: Input invalid email
+    # enter invalid email and password
     email_input = driver.find_element(By.NAME, "email")
     email_input.send_keys("invalidemail@example.com")
-
-    # Step 4: Input invalid password
     password_input = driver.find_element(By.NAME, "password")
     password_input.send_keys("wrongpassword")
 
-    # Step 5: Click the Login button
+    # click the Login button
     login_submit_button = driver.find_element(By.XPATH, "//button[text()='Login']")
     login_submit_button.click()
-    time.sleep(2)  # Wait for error message to appear
+    time.sleep(2)
 
-    # Step 6: Verify the error message
+    # verify the error message
     try:
         error_message = driver.find_element(By.XPATH, "//div[contains(text(), 'Incorrect email/password combination')]")
         assert "Incorrect email/password combination" in error_message.text
         print("Test Passed: Error message displayed for invalid credentials.")
     except NoSuchElementException:
         print("Test Failed: Error message not found.")
-        
+    
+    # save a screenshot
     driver.save_screenshot("login_error_message.png")
 
 finally:
-    # Close the browser
     driver.quit()
