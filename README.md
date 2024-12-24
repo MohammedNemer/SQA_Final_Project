@@ -40,6 +40,8 @@ This repository contains all the files and resources for the **Software Quality 
    python validlogin_test.py
    python addingresource_test.py
    python resourceDeleting_test.py
+   python InvalidLogin.py
+   python EditingResource_test.py
    ```
 3. Ensure **ChromeDriver** is installed and accessible in your system.
 
