@@ -107,7 +107,7 @@ The full project report is included as a PDF file in the repository. It provides
 ## **Contributors**
 1. **Mohammed Sadi Mahmoud Nemer** (2020089)  
 2. **Mohmad Moaena** (2019759)  
-3. **Rayan Abu Gharbieh** (2100495)  
+3. **Rayan Abu Gharbieh** (2100497)  
 4. **Qamar Mourad** (2104729)
 
 ---
